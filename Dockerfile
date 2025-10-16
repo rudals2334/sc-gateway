@@ -22,6 +22,7 @@ RUN ./gradlew bootJar --no-daemon
 
 ################################################################################
 # 2. 실행 단계 (Run Stage): JRE만 포함하여 이미지 크기 최소화
+# FROM openjdk:17-jre-slim-bullseye 또는 openjdk:17-jre-slim 등을 사용할 수 있습니다.
 ################################################################################
 FROM openjdk:17-jdk-slim AS final
 
